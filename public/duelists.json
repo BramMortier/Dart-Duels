@@ -1,0 +1,149 @@
+[
+    {
+        "name": "Spearman",
+        "stats": {
+            "healthpoints": 100,
+            "shield": 100
+        },
+        "attacks": [
+            {
+                "name": "Piercing Thrust",
+                "description": "A quick jab to penetrate the enemy's defense.",
+                "baseDmg": 15,
+                "pierceDmg": 15,
+                "bluntDmg": 0,
+                "slashDmg": 0
+            },
+            {
+                "name": "Precision Strike",
+                "description": "A carefully aimed thrust designed to exploit weaknesses in armor.",
+                "baseDmg": 10,
+                "pierceDmg": 20,
+                "bluntDmg": 0,
+                "slashDmg": 0
+            },
+            {
+                "name": "Spear Sweep",
+                "description": "A sweeping strike that cuts through foes.",
+                "baseDmg": 20,
+                "pierceDmg": 0,
+                "bluntDmg": 0,
+                "slashDmg": 20
+            },
+            {
+                "name": "Rapid Strikes",
+                "description": "A flurry of rapid thrusts and sweeps.",
+                "baseDmg": 15,
+                "pierceDmg": 7,
+                "bluntDmg": 0,
+                "slashDmg": 8
+            },
+            {
+                "name": "Spear Barrage",
+                "description": "A full-out assault with the spear, combining piercing and slashing attacks.",
+                "baseDmg": 30,
+                "pierceDmg": 18,
+                "bluntDmg": 0,
+                "slashDmg": 12
+            }
+        ]
+    },
+    {
+        "name": "Shieldman",
+        "stats": {
+            "healthpoints": 100,
+            "shield": 100
+        },
+        "attacks": [
+            {
+                "name": "Shield Bash",
+                "description": "A direct hit with the shield to destabilize the enemy.",
+                "baseDmg": 25,
+                "pierceDmg": 0,
+                "bluntDmg": 25,
+                "slashDmg": 0
+            },
+            {
+                "name": "Hammer Blow",
+                "description": "A heavy strike with a hammer or mace.",
+                "baseDmg": 20,
+                "pierceDmg": 0,
+                "bluntDmg": 20,
+                "slashDmg": 0
+            },
+            {
+                "name": "Sword Stab",
+                "description": "A sudden sword thrust targeting unprotected areas.",
+                "baseDmg": 15,
+                "pierceDmg": 15,
+                "bluntDmg": 0,
+                "slashDmg": 0
+            },
+            {
+                "name": "Combat Rush",
+                "description": "A combination of shield bashes and weapon strikes.",
+                "baseDmg": 20,
+                "pierceDmg": 10,
+                "bluntDmg": 10,
+                "slashDmg": 0
+            },
+            {
+                "name": "Defensive Onslaught",
+                "description": "A powerful combination of shield and weapon attacks, maximizing blunt and piercing damage.",
+                "baseDmg": 30,
+                "pierceDmg": 15,
+                "bluntDmg": 15,
+                "slashDmg": 0
+            }
+        ]
+    },
+    {
+        "name": "Archer",
+        "stats": {
+            "healthpoints": 100,
+            "shield": 100
+        },
+        "attacks": [
+            {
+                "name": "Direct Shot",
+                "description": "A well-aimed arrow shot.",
+                "baseDmg": 15,
+                "pierceDmg": 15,
+                "bluntDmg": 0,
+                "slashDmg": 0
+            },
+            {
+                "name": "Multi Shot",
+                "description": "Release multiple arrows at once to cover a wide area.",
+                "baseDmg": 20,
+                "pierceDmg": 20,
+                "bluntDmg": 0,
+                "slashDmg": 0
+            },
+            {
+                "name": "Cutting Arrow",
+                "description": "A shot with a specially-designed broadhead arrow for cutting.",
+                "baseDmg": 20,
+                "pierceDmg": 0,
+                "bluntDmg": 0,
+                "slashDmg": 20
+            },
+            {
+                "name": "Knife Slash",
+                "description": "A quick slash with a hunting knife.",
+                "baseDmg": 15,
+                "pierceDmg": 0,
+                "bluntDmg": 0,
+                "slashDmg": 15
+            },
+            {
+                "name": "Arrow Storm",
+                "description": "A rain of arrows, combining piercing and slashing attacks.",
+                "baseDmg": 30,
+                "pierceDmg": 18,
+                "bluntDmg": 0,
+                "slashDmg": 12
+            }
+        ]
+    }
+]
