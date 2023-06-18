@@ -1,6 +1,10 @@
-# PokeDartz
+# Dart Duels
 
-In this repository you can find the code we used to setup a darts detection system using a raspberry pi and 2 USB-webcams. We used the calculated scores to make a pokemon esque game and make the dartbattle you were dreaming about a reality :)
+In this repository you can find the code we used to setup a darts detection system using a raspberry pi and 2 USB-webcams. We used the calculated scores to make a turn based street fighter themed game. Enjoy :)
+
+![](/public/Titlescreen@2x.png)
+![](</public/Character%20selection%20screen%20(player%201)%402x.png>)
+![](/public/battle%20screen%402x.png)
 
 ### Technologies used:
 
