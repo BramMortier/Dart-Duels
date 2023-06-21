@@ -1,0 +1,73 @@
+.title-screen {
+    background-image: url("/assets/shoreline-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 var(--space-md);
+
+    &__container {
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: 4fr 6fr;
+    }
+
+    &__col {
+        display: flex;
+
+        &:nth-child(1) {
+            flex-direction: column;
+            gap: var(--space-4xl);
+            align-items: center;
+            padding: var(--space-2xl) 0;
+
+            img {
+                max-width: 450px;
+                transform: rotate(-7deg);
+            }
+        }
+
+        &:nth-child(2) {
+            align-items: flex-end;
+            justify-content: flex-end;
+
+            img {
+                max-width: 1000px;
+            }
+        }
+    }
+
+    &__start-btn {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        font-size: var(--fs-xl);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-md);
+        animation: fade 2s infinite;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__start-btn-line {
+        width: 40%;
+        height: 4px;
+        border-radius: 10px;
+        background-color: var(--grey-900);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
