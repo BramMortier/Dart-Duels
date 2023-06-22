@@ -1,0 +1,22 @@
+.btn {
+    position: relative;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: var(--space-sm) var(--space-2xl);
+    font-size: var(--fs-xl);
+    color: var(--white);
+    background-color: var(--yellow-500);
+    background-image: url("/assets/button-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid var(--yellow-900);
+    text-shadow: 2px 3px 0 var(--grey-900);
+    transition: all ease 0.1s;
+
+    &:hover {
+        cursor: pointer;
+        filter: brightness(90%);
+    }
+}

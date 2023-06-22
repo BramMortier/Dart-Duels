@@ -14,6 +14,33 @@
     &__col {
         &:nth-child(1) {
             padding: var(--space-xl) var(--space-xl) 0;
+            grid-template-rows: auto 1fr;
+            display: grid;
+            height: 100vh;
+        }
+
+        &:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+
+    &__player {
+        margin-bottom: var(--space-lg);
+
+        h2 {
+            font-size: var(--fs-3xl);
+            font-weight: 500;
+            color: var(--red-500);
+            box-shadow: 0px 0px;
+            text-shadow: 2px 3px 0 var(--grey-900);
+        }
+
+        p {
+            font-size: var(--fs-xl);
+            color: var(--white);
         }
     }
 
@@ -22,8 +49,12 @@
         flex-direction: column;
         gap: var(--space-md);
         overflow-y: auto;
-        height: 0;
-        min-height: 100%;
+        padding-bottom: var(--space-2xl);
+        border-radius: 10px;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
     &__duelist {
@@ -31,10 +62,10 @@
         border-radius: 10px;
         background-color: var(--overlay-600);
         display: grid;
-        grid-template-columns: 160px 1fr;
+        grid-template-columns: 120px 1fr;
         gap: var(--space-2xl);
         border: 2px solid transparent;
-        transition: all ease 0.3s;
+        transition: all ease 0.15s;
 
         &:hover {
             cursor: pointer;
@@ -84,7 +115,7 @@
         align-items: center;
 
         img {
-            height: 50px;
+            height: 40px;
             width: fit-content;
         }
 
@@ -92,5 +123,29 @@
             color: var(--white);
             font-size: var(--fs-lg);
         }
+    }
+
+    &__selected-duelist {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        & > button {
+            position: absolute;
+            bottom: var(--space-xl);
+        }
+    }
+
+    &__selected-duelist-image {
+        max-height: 400px;
+        width: fit-content;
+        margin-bottom: -3rem;
+        z-index: 10;
+    }
+
+    &__tower {
+        max-height: 400px;
+        width: fit-content;
     }
 }

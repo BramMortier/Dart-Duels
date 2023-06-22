@@ -1,10 +1,20 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, Children } from "react";
+import { useGameContext } from "@hooks/useGameContext";
+import { Button } from "@components";
 import "./duelistSelection.scss";
 import axios from "axios";
 
 const DuelistSelection = () => {
+    const { playerOne, setPlayerOne, playerTwo, setPlayerTwo } = useGameContext();
+
     const [duelists, setDuelists] = useState([]);
     const [currentlySelectedDuelist, setCurrentlySelectedDuelist] = useState({});
+
+    const handleSelectDuelist = () => {
+        console.log("duelist selected!");
+        console.log(currentlySelectedDuelist);
+        setPlayerOne(currentlySelectedDuelist);
+    };
 
     useEffect(() => {
         const fetchDuelists = async () => {
@@ -14,14 +24,14 @@ const DuelistSelection = () => {
         fetchDuelists();
     }, []);
 
-    console.log(duelists);
-
     return (
         <main className="duelist-selection">
             <div className="duelist-selection__container">
                 <div className="duelist-selection__col">
-                    <h2>Player 1</h2>
-                    <p>Choose your warrior!</p>
+                    <div className="duelist-selection__player">
+                        <h2>Player 1</h2>
+                        <p>Choose your warrior!</p>
+                    </div>
                     <ul className="duelist-selection__duelist-list">
                         {duelists &&
                             duelists.map((duelist, index) => (
@@ -52,6 +62,17 @@ const DuelistSelection = () => {
                                 </li>
                             ))}
                     </ul>
+                </div>
+                <div className="duelist-selection__col">
+                    <div className="duelist-selection__selected-duelist">
+                        {currentlySelectedDuelist && (
+                            <img className="duelist-selection__selected-duelist-image" src={currentlySelectedDuelist.image} alt="selected duelist" />
+                        )}
+                        <img className="duelist-selection__tower" src="/assets/stone-tower.png" alt="stone tower" />
+                        <Button onClick={handleSelectDuelist} variant="primary">
+                            Select
+                        </Button>
+                    </div>
                 </div>
             </div>
         </main>
