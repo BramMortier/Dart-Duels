@@ -1,9 +1,12 @@
 [
     {
         "name": "Spearman",
+        "description": "The spearman fights on the frontline of the battlefield engaging in swift combat with his spear.",
+        "image": "/assets/spearman.png",
+        "icon": "/assets/spearman-icon.png",
         "stats": {
             "healthpoints": 100,
-            "shield": 100
+            "shieldpoints": 100
         },
         "attacks": [
             {
@@ -50,9 +53,12 @@
     },
     {
         "name": "Shieldman",
+        "description": "The shieldman is a fierce warrior using his massive shield to fend off incoming attacks.",
+        "image": "/assets/shieldman.png",
+        "icon": "/assets/shieldman-icon.png",
         "stats": {
             "healthpoints": 100,
-            "shield": 100
+            "shieldpoints": 100
         },
         "attacks": [
             {
@@ -99,9 +105,12 @@
     },
     {
         "name": "Archer",
+        "description": "The archer uses its powerfull bow to strike with devastating precision.",
+        "image": "/assets/archer.png",
+        "icon": "/assets/archer-icon.png",
         "stats": {
             "healthpoints": 100,
-            "shield": 100
+            "shieldpoints": 100
         },
         "attacks": [
             {
